@@ -1,0 +1,61 @@
+@import './variables/fonts';
+@import './variables/colors';
+@import './variables/mixins';
+
+
+
+.header {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+
+    .nav-container {
+        @include flex-center;
+        justify-content: space-between;
+        font-family: $bolder-poppins
+    }
+
+
+}
+
+.menu {
+    @include flex-center;
+
+    .menu-icon {
+        font-size: 70px;
+        color: $main-color;
+        cursor: pointer;
+        margin-left: 1rem;
+        position: sticky;
+
+    }
+
+    h1 {
+        @include trans-color;
+        margin-left: 1rem;
+    }
+}
+
+.logo {
+    h1 {
+        color: $main-color;
+        text-transform: uppercase;
+
+    }
+}
+
+.right {
+    ul {
+        @include flex-center;
+        margin-right: 3rem;
+        list-style: none;
+
+        li {
+            a {
+                text-decoration: none;
+                margin: 2rem;
+                color: $main-color;
+            }
+        }
+    }
+}
