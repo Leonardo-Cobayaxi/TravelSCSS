@@ -1,14 +1,21 @@
 import { MenuOutlined } from '@mui/icons-material'
 import { Link } from 'react-router-dom'
 import './styles/Header.scss'
-import React from 'react'
+import React, { useState } from 'react'
+import { Menu } from './Menu'
 const Header = () => {
+    const [openMenu, setOpenMenu] = useState(false)
+
+    const showMenu = () => {
+        setOpenMenu(!openMenu)
+    }
+
     return (
         <div className='header'>
 
             <nav className='nav-container'>
                 <div className="menu">
-                    <MenuOutlined className='menu-icon' />
+                    <MenuOutlined className='menu-icon' onClick={showMenu} />
                 </div>
 
                 <div className="logo">
@@ -32,6 +39,23 @@ const Header = () => {
                     </ul>
                 </div>
             </nav>
+
+            <nav className={openMenu ? 'slider active' : 'slider'}>
+                <ul onClick={showMenu} className='ul-itens'>
+                    {Menu.map((item, index) => {
+                        return (
+                            <div className='container'>
+                                <li className={item.className}>
+                                    <Link to={item.path}>
+                                        {item.text}
+                                    </Link>
+                                </li>
+                            </div>
+                        )
+                    })}
+                </ul>
+            </nav>
+
 
         </div>
     )
