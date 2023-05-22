@@ -14,9 +14,6 @@ const Header = () => {
         <div className='header'>
 
             <nav className='nav-container'>
-                <div className="menu">
-                    <MenuOutlined className='menu-icon' onClick={showMenu} />
-                </div>
 
                 <div className="logo">
                     <h1>Etravel</h1>
@@ -25,7 +22,7 @@ const Header = () => {
                 <div className="right">
                     <ul>
                         <li>
-                            <Link to='/places'>Places</Link>
+                            <Link to='/joinUs'>Join us</Link>
                         </li>
                         <li>
                             <Link to='/pricing'>Pricing</Link>
@@ -37,6 +34,9 @@ const Header = () => {
                             <Link to='/sponsors'>Sponsors</Link>
                         </li>
                     </ul>
+                    <div className="menu">
+                        <MenuOutlined className='menu-icon' onClick={showMenu} />
+                    </div>
                 </div>
             </nav>
 

@@ -3,3 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(29, 29, 29, 0.3);
+    background-color: rgb(49, 49, 49);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(231, 231, 231);
+    border-top-right-radius: 40%;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+
+}

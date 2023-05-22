@@ -23,7 +23,7 @@
     @include flex-center;
 
     .menu-icon {
-        font-size: 70px;
+        font-size: 64px;
         color: $main-color;
         cursor: pointer;
         margin-left: 1rem;
@@ -41,14 +41,16 @@
     h1 {
         color: $main-color;
         text-transform: uppercase;
-
+        margin-left: 1rem;
     }
 }
 
 .right {
+    display: flex;
+    flex-direction: row;
+
     ul {
         @include flex-center;
-        margin-right: 3rem;
         list-style: none;
 
         li {

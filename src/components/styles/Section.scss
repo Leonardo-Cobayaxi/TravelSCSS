@@ -3,8 +3,8 @@
 @import './variables/fonts';
 
 section {
-    height: 90vh;
-    margin: 15px;
+    height: 99vh;
+    margin-bottom: 0.1rem;
     overflow: hidden;
     font-family: $bolder-poppins;
     position: relative;
@@ -37,7 +37,7 @@ section {
     img {
         object-fit: cover;
         width: 100vw;
-        height: 90vh;
+        height: 99vh;
     }
 
     .places {
@@ -85,7 +85,7 @@ section {
 
     .bottom {
         position: absolute;
-        bottom: 0%;
+        bottom: 5%;
         left: 5%;
         color: $main-color;
     }
