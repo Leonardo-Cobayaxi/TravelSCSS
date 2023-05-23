@@ -1,0 +1,124 @@
+@import './variables/fonts';
+@import './variables/colors';
+
+.joinUs {
+    background-color: $header-color;
+    position: relative;
+    font-family: $bolder-poppins;
+    color: $main-color;
+}
+
+.upperSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+
+    div {
+        width: 50%;
+        left: 5%;
+        position: absolute;
+
+        h1 {
+            margin-bottom: 1rem;
+        }
+    }
+
+    h2 {
+        right: 5%;
+        position: absolute;
+    }
+}
+
+.midSection {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+
+    h1 {
+        padding-bottom: 4rem;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .creditCard {
+            font-size: 32px;
+        }
+
+        .moneyOff {
+            font-size: 32px;
+        }
+
+        .discount {
+            font-size: 32px;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-top: 1rem;
+            width: 40%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+}
+
+.lowerSection {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    height: 80vh;
+
+    div {
+        display: flex;
+        left: 5%;
+        position: absolute;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            width: 35%;
+            margin-left: 10rem;
+        }
+    }
+
+
+
+}
+
+button {
+    position: absolute;
+    bottom: 2%;
+    background-color: transparent;
+    border: 3px solid $main-color ;
+    color: $main-color;
+    padding: 1rem 4rem;
+    margin: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+
+    &:hover {
+        background-color: $main-color;
+        color: $header-color;
+        transition: 0.5s;
+        transform: scale(110%);
+    }
+}

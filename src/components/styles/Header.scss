@@ -38,10 +38,20 @@
 }
 
 .logo {
+
+    .link {
+        text-decoration: none;
+    }
+
     h1 {
+        font-family: $Icon-mina;
         color: $main-color;
         text-transform: uppercase;
         margin-left: 1rem;
+        font-weight: 400;
+        letter-spacing: 16px;
+        text-align: left;
+
     }
 }
 

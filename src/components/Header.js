@@ -16,7 +16,9 @@ const Header = () => {
             <nav className='nav-container'>
 
                 <div className="logo">
-                    <h1>Etravel</h1>
+                    <Link to='/' className='link'>
+                        <h1>Ghoof’travels</h1>
+                    </Link>
                 </div>
 
                 <div className="right">
