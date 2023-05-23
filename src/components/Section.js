@@ -34,7 +34,6 @@ const Section = ({ slides }) => {
                                             <button>Discover</button>
                                         </div>
                                         <div className='bottom'>
-
                                             <p>You can get 50% off if its your first purchase!</p>
                                         </div>
                                     </div>

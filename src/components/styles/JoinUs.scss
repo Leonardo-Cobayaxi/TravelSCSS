@@ -2,7 +2,9 @@
 @import './variables/colors';
 
 .joinUs {
-    background-color: $header-color;
+
+    background: $header-color;
+    background: linear-gradient(146deg, rgba(0, 0, 0, 1) 27%, rgba(94, 21, 130, 1) 91%, rgba(168, 0, 251, 1) 100%);
     position: relative;
     font-family: $bolder-poppins;
     color: $main-color;
@@ -25,9 +27,12 @@
         }
     }
 
-    h2 {
-        right: 5%;
+    img {
         position: absolute;
+        right: 2%;
+        width: 40%;
+        opacity: 80%;
+        border-radius: 8px;
     }
 }
 
@@ -98,27 +103,25 @@
         }
     }
 
+    button {
+        position: absolute;
+        bottom: 2%;
+        background-color: transparent;
+        border: 3px solid $main-color ;
+        color: $main-color;
+        padding: 1rem 4rem;
+        margin: 1rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
 
-
-}
-
-button {
-    position: absolute;
-    bottom: 2%;
-    background-color: transparent;
-    border: 3px solid $main-color ;
-    color: $main-color;
-    padding: 1rem 4rem;
-    margin: 1rem;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-
-    &:hover {
-        background-color: $main-color;
-        color: $header-color;
-        transition: 0.5s;
-        transform: scale(110%);
+        &:hover {
+            background-color: $main-color;
+            color: $header-color;
+            transition: 0.5s;
+            transform: scale(110%);
+        }
     }
+
 }

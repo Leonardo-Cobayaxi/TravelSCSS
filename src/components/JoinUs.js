@@ -5,7 +5,7 @@ import MoneyOffIcon from '@mui/icons-material/MoneyOff';
 import './styles/JoinUs.scss'
 import Header from './Header';
 import cardStack from '../components/assets/cardStack.svg'
-
+import travel from '../components/assets/travel7.png'
 const JoinUs = () => {
 
     return (
@@ -19,7 +19,7 @@ const JoinUs = () => {
                         We understand that the more we travel, the more we enrich our lives.</p>
                 </div>
 
-                <h2>Imagem aqui</h2>
+                <img src={travel} />
             </div>
             <div className='midSection'>
                 <h1>Why we're different</h1>
