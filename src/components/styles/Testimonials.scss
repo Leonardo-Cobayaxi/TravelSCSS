@@ -1,0 +1,65 @@
+@import './variables/colors';
+@import './variables/mixins';
+@import './variables/fonts';
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: $header-color ;
+    align-items: center;
+    font-family: $bolder-poppins;
+    position: relative;
+    width: 100%;
+
+    .header {
+        color: $main-color;
+        width: 20%;
+        position: absolute;
+        left: 5%;
+        background-image: url(../assets/purpleCircle.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        position: absolute;
+        right: 1%;
+
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: $main-color;
+            height: 450px;
+            width: 300px;
+
+            border: 1px solid $main-color;
+            padding: 7px 30px;
+
+            p {
+                margin: 1rem;
+            }
+
+            h3 {
+                align-self: flex-start;
+            }
+
+            h4 {
+                align-self: flex-start;
+                opacity: 60%;
+            }
+
+            img {
+                width: 200px;
+
+
+            }
+        }
+    }
+}

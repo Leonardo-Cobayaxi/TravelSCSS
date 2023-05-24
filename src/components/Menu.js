@@ -20,8 +20,8 @@ export const Menu = [
         className: 'menu-data'
     },
     {
-        text: 'About',
-        path: '/about',
+        text: 'Gallery',
+        path: '/gallery',
         className: 'menu-data'
     },
     {

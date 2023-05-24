@@ -17,7 +17,7 @@ const Header = () => {
 
                 <div className="logo">
                     <Link to='/' className='link'>
-                        <h1>Ghoof’travels</h1>
+                        <h1 className='logoColor'>G</h1> <h1>hoof’</h1> <h1 className='logoColor'>t</h1> <h1>ravels</h1>
                     </Link>
                 </div>
 

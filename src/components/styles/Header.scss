@@ -41,17 +41,24 @@
 
     .link {
         text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+        margin-left: 1rem;
     }
 
     h1 {
         font-family: $Icon-mina;
         color: $main-color;
         text-transform: uppercase;
-        margin-left: 1rem;
         font-weight: 400;
         letter-spacing: 16px;
         text-align: left;
 
+    }
+
+    .logoColor {
+        color: #441A8B;
     }
 }
 
