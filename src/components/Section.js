@@ -26,16 +26,15 @@ const Section = ({ slides }) => {
                             <div className={index === first ? 'slides active' : 'slides'} >
                                 {index === first && (
                                     <div>
-                                        <img src={item.image} />
+                                        <img src={item.image} alt={item.text} />
+                                        <h1 className='title'>The best destinations for you to explore.</h1>
                                         <p className='places'>{item.text}</p>
                                         <p className='status'>{item.status}</p>
                                         <div className='buttons'>
                                             <button>Join</button>
                                             <button>Discover</button>
                                         </div>
-                                        <div className='bottom'>
-                                            <p>You can get 50% off if its your first purchase!</p>
-                                        </div>
+
                                     </div>
 
                                 )}

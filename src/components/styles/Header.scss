@@ -9,6 +9,7 @@
     z-index: 100;
     width: 100%;
     font-family: $bolder-poppins;
+    background-color: #00000070;
 
     .nav-container {
         @include flex-center;
@@ -58,7 +59,7 @@
     }
 
     .logoColor {
-        color: #441A8B;
+        color: #8C30DC;
     }
 }
 

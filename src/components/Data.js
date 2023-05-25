@@ -12,50 +12,50 @@ export const Data = [
     {
         image: paris,
         text: 'Paris ,  France',
-        status: 'Enjoy Our one of the Biggest Tour in Paris Just Clicking one Button',
+        status: 'Discorver a feast of art, scenary, history and culture',
         className: 'data-items'
     },
     {
         image: yarham,
         text: 'Healing Church ,  Yharnam ',
-        status: 'Enjoy the rich and isolationist city Just Clicking one Button',
+        status: 'Enjoy the rich and isolationist city',
         className: 'data-items'
     },
     {
         image: barcelona,
         text: 'Barcelona ,  Spain',
-        status: 'Enjoy Our one of the Biggest Tour in Barcelona Just Clicking one Button',
+        status: 'Indulge yourself with the beaches , cathedrals and churches ',
         className: 'data-items'
     },
     {
         image: columbia,
         text: 'Columbia ,  USA',
-        status: 'Enjoy the Floating city of Columbia Just Clicking one Button',
+        status: 'Be entertained by the floating city of Columbia',
         className: 'data-items'
     },
     {
         image: moscow,
         text: 'Moscow ,  Russia',
-        status: 'Enjoy Our one of the Biggest Tour in Moscow Just Clicking one Button',
+        status: 'The fascinating, exhilarating nightlife of Moscow',
         className: 'data-items'
     }
     ,
     {
         image: newyork,
         text: 'New York ,  USA',
-        status: 'Enjoy Our one of the Biggest Tour in New York Just Clicking one Button',
+        status: 'Visit a remarkable and beautiful city that is often overlooked',
         className: 'data-items'
     },
     {
         image: pandora,
         text: 'Wasteland ,  Pandora',
-        status: 'Enjoy the peculiar wildlife and people Just Clicking one Button',
+        status: 'Learn about the peculiar wildlife and people in this unique environment',
         className: 'data-items'
     },
     {
         image: dunwall,
         text: 'Dunwall ,  Gristol',
-        status: "Enjoy the grim place, polluted, and heavily stratified Just Clicking one Button",
+        status: "Visit the gothic and art nouveau architecture on a grim , polluted, and heavily stratified city",
         className: 'data-items'
     }
 

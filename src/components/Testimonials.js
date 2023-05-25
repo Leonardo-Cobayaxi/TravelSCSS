@@ -1,5 +1,7 @@
 import React from "react";
-import test from './assets/travel.jpg';
+import profile1 from './assets/profile1.jpg';
+import profile2 from './assets/profile2.jpg';
+import profile3 from './assets/profile3.jpg';
 import './styles/Testimonials.scss'
 const Testimonials = () => {
     return (
@@ -13,28 +15,29 @@ const Testimonials = () => {
             </div>
             <div className="cards">
                 <div className="card">
-                    <img src={test} />
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Iusto distinctio delectus iste, voluptas dignissimos
+                    <img src={profile1} alt="user" />
+                    <p>We had the most remarkable family tour.
+                        Not only everything was perfect, but we felt, in every instance, that we became goofy and the crew truly cared about us.
                     </p>
-                    <h3>Nome</h3>
-                    <h4>Cargo</h4>
+                    <h3>Gary K. Katz</h3>
+                    <h4>Barcelona, Spain</h4>
                 </div>
                 <div className="card">
-                    <img src={test} />
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Iusto distinctio delectus iste, voluptas dignissimos
+                    <img src={profile2} alt="user" />
+                    <p>The comfort, the incredibly caring crew, the goofiness, the history we learned, along with the stunning beauty of the islands.
                     </p>
-                    <h3>Nome</h3>
-                    <h4>Cargo</h4>
+                    <h3>Christopher R. Garcia
+                    </h3>
+                    <h4>Dunwall , Gristol</h4>
                 </div>
                 <div className="card">
-                    <img src={test} />
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Iusto distinctio delectus iste, voluptas dignissimos
+                    <img src={profile3} alt="user" />
+                    <p>Wonderful ! The two tour leaders who were archaeologists.
+                        The food was bountiful. On the boat the meals were wholesome and goofy.
                     </p>
-                    <h3>Nome</h3>
-                    <h4>Cargo</h4>
+                    <h3>Sylvia J. Martin
+                    </h3>
+                    <h4>Paris, France</h4>
                 </div>
 
             </div>

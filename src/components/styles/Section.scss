@@ -40,19 +40,30 @@ section {
         height: 99vh;
     }
 
+    .title {
+        position: absolute;
+        font-size: 4rem;
+        line-height: 5rem;
+        color: $main-color;
+        width: 35%;
+        left: 10%;
+        top: 20%;
+        text-shadow: 30px 0px 50px $header_color
+    }
+
     .places {
         position: absolute;
-        font-size: 5rem;
+        font-size: 3rem;
         color: $main-color;
-        left: 10%;
-        top: 41%;
+        right: 10%;
+        top: 90%;
         font-weight: 900;
         text-shadow: 10px 0px 30px $header_color ;
     }
 
     .status {
         position: absolute;
-        top: 60%;
+        top: 80%;
         left: 10%;
         color: $main-color;
         font-size: 1.5rem;
@@ -61,7 +72,7 @@ section {
 
     .buttons {
         position: absolute;
-        bottom: 20%;
+        top: 90%;
         left: 10%;
 
         button {
@@ -83,10 +94,5 @@ section {
         }
     }
 
-    .bottom {
-        position: absolute;
-        bottom: 5%;
-        left: 5%;
-        color: $main-color;
-    }
+
 }

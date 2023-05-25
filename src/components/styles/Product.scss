@@ -1,0 +1,39 @@
+@import './variables/colors';
+@import './variables/mixins';
+@import './variables/fonts';
+
+.product {
+    height: 100vh;
+    background-color: $header-color ;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .title {
+        color: $main-color;
+        width: 50%;
+        position: absolute;
+        left: 5%;
+
+        h1 {
+            font-size: 4rem;
+            line-height: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        h2 {
+            font-weight: 400;
+            padding-bottom: 5rem;
+        }
+
+        h3 {
+            font-weight: 300;
+        }
+    }
+
+    img {
+        position: absolute;
+        right: 5%;
+        width: 460px;
+    }
+}
