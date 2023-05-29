@@ -13,7 +13,7 @@ function App() {
       <Header />
       <Section slides={Data} />
       <Product />
-      <Testimonials id={'testimonials'} />
+      <Testimonials />
       <Footer />
     </div>
   );

@@ -4,42 +4,77 @@
 .pricing {
     width: 100%;
     height: 100vh;
-    background-color: $header-color;
+    background: $header-color;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 34%, rgba(54, 0, 68, 1) 100%);
     font-family: $bolder-poppins;
     overflow: hidden;
 
-    .gp {
-        position: absolute;
-        top: 0%;
-        left: 35%;
-        font-size: 50px;
-    }
 }
 
-.arrow {
-    color: $main-color;
-    font-size: 50px;
+.none {
+    display: none;
 }
 
 .cart-container {
     padding: 16px;
     color: $main-color;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-direction: row;
     gap: 0.5rem;
     text-align: center;
     align-items: center;
+    justify-content: space-around;
     height: 100%;
 }
 
 .tour {
     border: 1px solid $main-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: $main-color;
-    height: 300px;
+    height: 400px;
+    width: 360px;
     line-height: 35px;
+    position: relative;
+
+
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    img {
+        width: 320px;
+        height: 200px;
+        cursor: pointer;
+
+        &:hover {
+            transition: 0.3s ease-in-out;
+            transform: scale(105%);
+            opacity: 95%;
+        }
+    }
 
     p {
-        border-bottom: 5px solid $main-color;
+        align-self: flex-start;
+        margin-left: 8px;
+    }
+
+    .price {
+        align-self: flex-start;
+
+
+        p {
+            margin-bottom: -0.5rem;
+        }
+
+        h4 {
+            margin-left: 8px;
+
+            font-size: 2.5rem;
+            text-align: start;
+        }
     }
 
     button {
@@ -48,5 +83,15 @@
         color: $main-color;
         padding: 7px 30px;
         cursor: pointer;
+        position: absolute;
+        bottom: 1%;
+
+        &:hover {
+            background-color: $main-color;
+            color: $header-color;
+            transition: 0.5s;
+            transform: scale(110%);
+        }
     }
+
 }

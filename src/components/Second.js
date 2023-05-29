@@ -31,7 +31,7 @@ const Second = () => {
                     <p>Columbia , USA 1912</p>
                 </div>
                 <div>
-                    <img src={moscow} alt="moscow" />
+                    {/* <img src={moscow} alt="moscow" />
                     <p>Moscow, Russia 2017</p>
                 </div>
                 <div>
@@ -44,7 +44,7 @@ const Second = () => {
                 </div>
                 <div>
                     <img src={pandora} alt="pandora" />
-                    <p>Wasteland , Pandora 2864</p>
+                    <p>Wasteland , Pandora 2864</p> */}
                 </div>
             </div>
 

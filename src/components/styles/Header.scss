@@ -5,8 +5,8 @@
 
 
 .header {
-    position: absolute;
-    z-index: 100;
+    position: fixed;
+    z-index: 5;
     width: 100%;
     font-family: $bolder-poppins;
     background-color: #00000070;
@@ -61,6 +61,7 @@
     .logoColor {
         color: #8C30DC;
     }
+
 }
 
 .right {
@@ -71,14 +72,31 @@
         @include flex-center;
         list-style: none;
 
+        align-self: center;
+
+
         li {
             a {
+
+                align-items: center;
+                display: flex;
                 text-decoration: none;
                 margin: 2rem;
                 color: $main-color;
+
+
             }
+
+            &:hover {
+
+                background-color: #4b4b4b65;
+            }
+
+
         }
+
     }
+
 }
 
 
@@ -107,7 +125,7 @@
 
 .ul-itens {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 
     li {

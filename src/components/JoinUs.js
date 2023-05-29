@@ -6,7 +6,7 @@ import './styles/JoinUs.scss'
 import Header from './Header';
 import cardStack from '../components/assets/cardStack.svg'
 import travel from '../components/assets/travel7.png'
-const JoinUs = () => {
+const AboutUs = () => {
 
     return (
 
@@ -55,4 +55,4 @@ const JoinUs = () => {
     )
 }
 
-export default JoinUs
+export default AboutUs

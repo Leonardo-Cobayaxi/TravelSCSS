@@ -1,72 +1,120 @@
-import { Link } from 'react-router-dom'
-import React from 'react'
-import { ArrowBack } from '@mui/icons-material'
+
+import React, { useState } from 'react'
+
 import './styles/Pricing.scss'
+import Header from './Header'
+import small from './assets/small-paris.jpg'
+import barca from './assets/barcelona.jpg'
+import moscow from './assets/moscow.jpg'
+import newyork from './assets/newyork.jpg'
+import yarham from './assets/yharnam-small.jpg';
+import pandora from './assets/pandora-small.jpg';
+import dunwall from './assets/dunwall-alley.jpg';
+import columbia from './assets/columbia-light.jpg';
+import { ArrowBack, ArrowForward } from '@mui/icons-material'
+
 const Pricing = () => {
+    const [first, setFirst] = useState(true)
+    const nextSlide = () => {
+        setFirst(!first)
+    }
     return (
         <div className='pricing'>
-            <div className="tohome">
-                <Link to='/'>
-                    <ArrowBack className='arrow' />
-                </Link>
+            <Header />
+            <div className={first === true ? "cart-container" : "none"}>
+                <ArrowBack onClick={nextSlide} />
+                <div className="tour">
+                    <h1>City of light</h1>
+                    <img src={small} />
+                    <p>Paris , France</p>
+                    <div className='price'>
+                        <p>Per person from</p>
+                        <h4>$1234</h4>
+                    </div>
+                    <button>More</button>
+                </div>
+
+                <div className="tour">
+                    <h1>Gothic architecture</h1>
+                    <img src={yarham} />
+                    <p>Healing Church , Yharnam</p>
+                    <div className='price'>
+                        <p>Per person from</p>
+                        <h4>$1234</h4>
+                    </div>
+                    <button>More</button>
+                </div>
+
+                <div className="tour">
+                    <h1>City of Counts</h1>
+                    <img src={barca} />
+                    <p>Barcelona , Spain</p>
+                    <div className='price'>
+                        <p>Per person from</p>
+                        <h4>$1234</h4>
+                    </div>
+                    <button>More</button>
+                </div>
+
+                <div className="tour">
+                    <h1>Flying city</h1>
+                    <img src={columbia} />
+                    <p>Columbia , USA</p>
+                    <div className='price'>
+                        <p>Per person from</p>
+                        <h4>$1234</h4>
+                    </div>
+                    <button>More</button>
+                </div>
+                <ArrowForward onClick={nextSlide} />
             </div>
-
-            <div className="cart-container">
-                <h1 className='gp'>General Pricing</h1>
-                <div className="tour">
-                    <h1>Paris</h1>
-                    <p>5 day tour to Paris,France</p>
-                    <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto distinctio delectus iste, voluptas dignissimos laudantium repellendus repudiandae voluptatem amet expedita quia eos porro ut a molestiae eaque impedit temporibus. Exercitationem!</h5>
-                    <button>More</button>
-                </div>
+            <div className={first === true ? "none" : "cart-container"}>
+                <ArrowBack onClick={nextSlide} />
 
                 <div className="tour">
-                    <h1>Healing Church</h1>
-                    <p>5 day tour to Healing Church , Yharnam</p>
-                    <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto distinctio delectus iste, voluptas dignissimos laudantium repellendus repudiandae voluptatem amet expedita quia eos porro ut a molestiae eaque impedit temporibus. Exercitationem!</h5>
+                    <h1>Coldest megacity</h1>
+                    <img src={moscow} />
+                    <p>Moscow , Russia</p>
+                    <div className='price'>
+                        <p>Per person from</p>
+                        <h4>$1234</h4>
+                    </div>
                     <button>More</button>
                 </div>
 
                 <div className="tour">
-                    <h1>Barcelona</h1>
-                    <p>5 day tour to Barcelona, Spain</p>
-                    <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto distinctio delectus iste, voluptas dignissimos laudantium repellendus repudiandae voluptatem amet expedita quia eos porro ut a molestiae eaque impedit temporibus. Exercitationem!</h5>
+                    <h1>Industrial whaling city</h1>
+                    <img src={dunwall} />
+                    <p>Dunwall , Gristol </p>
+                    <div className='price'>
+                        <p>Per person from</p>
+                        <h4>$1234</h4>
+                    </div>
                     <button>More</button>
                 </div>
 
                 <div className="tour">
-                    <h1>Columbia</h1>
-                    <p>5 day tour to Columbia , USA</p>
-                    <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto distinctio delectus iste, voluptas dignissimos laudantium repellendus repudiandae voluptatem amet expedita quia eos porro ut a molestiae eaque impedit temporibus. Exercitationem!</h5>
-                    <button>More</button>
-                </div>
-                <div className="tour">
-                    <h1>Moscow</h1>
-                    <p>5 day tour to Moscow, Russia</p>
-                    <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto distinctio delectus iste, voluptas dignissimos laudantium repellendus repudiandae voluptatem amet expedita quia eos porro ut a molestiae eaque impedit temporibus. Exercitationem!</h5>
-                    <button>More</button>
-                </div>
-
-                <div className="tour">
-                    <h1>Dunwall</h1>
-                    <p>5 day tour to Dunwall , Gristol </p>
-                    <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto distinctio delectus iste, voluptas dignissimos laudantium repellendus repudiandae voluptatem amet expedita quia eos porro ut a molestiae eaque impedit temporibus. Exercitationem!</h5>
+                    <h1>The big apple</h1>
+                    <img src={newyork} />
+                    <p>NYC , USA</p>
+                    <div className='price'>
+                        <p>Per person from</p>
+                        <h4>$1234</h4>
+                    </div>
                     <button>More</button>
                 </div>
 
                 <div className="tour">
-                    <h1>New York</h1>
-                    <p>5 day tour to NYC, USA</p>
-                    <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto distinctio delectus iste, voluptas dignissimos laudantium repellendus repudiandae voluptatem amet expedita quia eos porro ut a molestiae eaque impedit temporibus. Exercitationem!</h5>
+                    <h1>Otherworldly experience</h1>
+                    <img src={pandora} />
+                    <p>Wasteland , Pandora</p>
+                    <div className='price'>
+                        <p>Per person from</p>
+                        <h4>$1234</h4>
+                    </div>
                     <button>More</button>
                 </div>
-
-                <div className="tour">
-                    <h1>Wasteland</h1>
-                    <p>5 day tour to Wasteland , Pandora</p>
-                    <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto distinctio delectus iste, voluptas dignissimos laudantium repellendus repudiandae voluptatem amet expedita quia eos porro ut a molestiae eaque impedit temporibus. Exercitationem!</h5>
-                    <button>More</button>
-                </div>
+                <ArrowForward onClick={nextSlide} />
 
             </div>
 

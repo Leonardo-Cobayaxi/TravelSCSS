@@ -5,29 +5,22 @@ export const Menu = [
         className: 'menu-data'
     },
     {
-        text: 'Gallery',
-        path: '/gallery',
+        text: 'About us',
+        path: '/AboutUs',
         className: 'menu-data'
-    },
+    }
+    ,
     {
-        text: 'Sign In',
-        path: '/signin',
+        text: 'Pricing',
+        path: '/pricing',
         className: 'menu-data'
-    },
+    }
+    ,
     {
-        text: 'Sign Up',
-        path: 'signup',
+        text: 'Login',
+        path: '/login',
         className: 'menu-data'
-    },
-    {
-        text: 'Gallery',
-        path: '/gallery',
-        className: 'menu-data'
-    },
-    {
-        text: 'History',
-        path: '/history',
-        className: 'menu-data'
-    },
+    }
+
 
 ]

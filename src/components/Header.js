@@ -24,17 +24,15 @@ const Header = () => {
                 <div className="right">
                     <ul>
                         <li>
-                            <Link to='/joinUs'>Join us</Link>
+                            <Link to='/AboutUs'>About us</Link>
                         </li>
                         <li>
                             <Link to='/pricing'>Pricing</Link>
                         </li>
                         <li>
-                            <Link to='/signup'>Collections</Link>
+                            <Link to='/signup'>Login</Link>
                         </li>
-                        <li>
-                            <Link to='/sponsors'>Sponsors</Link>
-                        </li>
+
                     </ul>
                     <div className="menu">
                         <MenuOutlined className='menu-icon' onClick={showMenu} />
@@ -46,13 +44,16 @@ const Header = () => {
                 <ul onClick={showMenu} className='ul-itens'>
                     {Menu.map((item, index) => {
                         return (
-                            <div className='container'>
-                                <li className={item.className}>
-                                    <Link to={item.path}>
-                                        {item.text}
-                                    </Link>
-                                </li>
-                            </div>
+                            <>
+                                <div className='container'>
+                                    <li className={item.className}>
+                                        <Link to={item.path}>
+                                            {item.text}
+                                        </Link>
+                                    </li>
+                                </div>
+
+                            </>
                         )
                     })}
                 </ul>

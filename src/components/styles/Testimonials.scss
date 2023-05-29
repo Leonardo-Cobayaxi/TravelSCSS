@@ -15,6 +15,7 @@
     .header {
         color: $main-color;
         width: 20%;
+        z-index: 0;
         position: absolute;
         left: 5%;
         background-image: url(../assets/purpleCircle.svg);
