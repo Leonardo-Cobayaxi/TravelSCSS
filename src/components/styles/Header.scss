@@ -7,6 +7,7 @@
 .header {
     position: fixed;
     z-index: 5;
+
     width: 100%;
     font-family: $bolder-poppins;
     background-color: #00000070;
@@ -15,6 +16,42 @@
         @include flex-center;
         justify-content: space-between;
         font-family: $bolder-poppins
+    }
+
+    .right {
+        display: flex;
+        flex-direction: row;
+
+        ul {
+            @include flex-center;
+            list-style: none;
+
+            align-self: center;
+
+
+            li {
+                a {
+
+                    align-items: center;
+                    display: flex;
+                    text-decoration: none;
+                    padding: 2rem;
+                    color: $main-color;
+
+                    height: 100%;
+                }
+
+                &:hover {
+
+                    background-color: #4b4b4b65;
+                }
+
+
+
+            }
+
+        }
+
     }
 
 
@@ -64,40 +101,6 @@
 
 }
 
-.right {
-    display: flex;
-    flex-direction: row;
-
-    ul {
-        @include flex-center;
-        list-style: none;
-
-        align-self: center;
-
-
-        li {
-            a {
-
-                align-items: center;
-                display: flex;
-                text-decoration: none;
-                margin: 2rem;
-                color: $main-color;
-
-
-            }
-
-            &:hover {
-
-                background-color: #4b4b4b65;
-            }
-
-
-        }
-
-    }
-
-}
 
 
 .slider {
