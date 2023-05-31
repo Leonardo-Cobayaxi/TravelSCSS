@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 import { Data } from './Data'
 import './styles/Section.scss'
 import { ArrowBack, ArrowForward } from '@mui/icons-material'
+import { Link } from 'react-router-dom'
+
 
 const Section = ({ slides }) => {
     const [first, setFirst] = useState(0)
@@ -31,8 +33,16 @@ const Section = ({ slides }) => {
                                         <p className='places'>{item.text}</p>
                                         <p className='status'>{item.status}</p>
                                         <div className='buttons'>
-                                            <button>Join</button>
-                                            <button>Discover</button>
+                                            <Link to='/login' className='link'>
+                                                <button>
+                                                    Join
+                                                </button>
+                                            </Link>
+                                            <Link to='/pricing' className='link'>
+                                                <button>
+                                                    Discover
+                                                </button>
+                                            </Link>
                                         </div>
 
                                     </div>

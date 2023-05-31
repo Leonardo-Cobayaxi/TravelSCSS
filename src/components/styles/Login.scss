@@ -5,6 +5,10 @@
 
 .login {
     background-color: $header-color;
+    background-image: url(../assets/login.jpg);
+    background-size: cover;
+    background-position: center;
+
     height: 100vh;
     font-family: $bolder-poppins;
     color: $main-color;
@@ -71,22 +75,28 @@
         border-radius: 5px;
     }
 
-    .btn-login {
-        all: unset;
-        top: 40%;
-        border-radius: 5px;
-        height: 36px;
-        width: 450px;
-        font-weight: 600;
+    .link-login {
         position: absolute;
-        background-color: $main-color;
-        color: $header-color;
-        cursor: pointer;
+        text-decoration: none;
+        top: 40%;
 
-        &:hover {
-            background-color: #57009e;
-            color: $main-color;
+        .btn-login {
+            all: unset;
+            border-radius: 5px;
+            height: 36px;
+            width: 450px;
+            font-weight: 600;
+            background-color: $main-color;
+            color: $header-color;
+            cursor: pointer;
 
+
+
+            &:hover {
+                background-color: #57009e;
+                color: $main-color;
+                transition: 0.3s;
+            }
         }
     }
 
@@ -95,27 +105,42 @@
         top: 55%;
     }
 
+    span {
+        position: absolute;
+        bottom: 0%;
+        width: 100%;
+        font-size: large;
+        background-color: $header-color;
+    }
+
     .buttons {
         display: flex;
         flex-direction: column;
         position: absolute;
-        bottom: 5%;
-        width: 450px;
+        bottom: 10%;
+        width: 100%;
         gap: 1rem;
 
+        .link-social {
+            text-decoration: none;
+
+        }
+
         button {
+
             all: unset;
             display: flex;
             align-items: center;
-
+            width: 450px;
             border-radius: 5px;
             height: 36px;
             background-color: $main-color;
             color: $header-color;
             cursor: pointer;
-            padding-left: 2rem;
-            padding-right: 5rem;
+            padding-left: 3px;
+
             gap: 100px;
+
         }
     }
 

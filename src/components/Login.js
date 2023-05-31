@@ -16,15 +16,22 @@ const Login = () => {
                 <h2>Log in or create an account</h2>
                 <p>Your email address</p>
                 <input></input>
-                <button className="btn-login">NEXT</button>
+                <Link className="link-login" to='https://matias.ma/nsfw/'>
+                    <button className="btn-login">NEXT</button>
+                </Link>
                 <h3>or</h3>
                 <div className="buttons">
-
-                    <button><Google />Continue with google </button>
-                    <button><Apple />Continue with Apple </button>
-                    <button><FacebookRounded /> Continue with Facebook </button>
+                    <Link className="link-social" to='https://matias.ma/nsfw/'>
+                        <button><Google />Continue with google </button>
+                    </Link>
+                    <Link className="link-social" to='https://matias.ma/nsfw/'>
+                        <button><Apple />Continue with Apple </button>
+                    </Link>
+                    <Link className="link-social" to='https://matias.ma/nsfw/'>
+                        <button><FacebookRounded /> Continue with Facebook </button>
+                    </Link>
                 </div>
-                {/* <p>By creating an account, you agree to our Privacy policy and Terms of use.</p> */}
+                <span>Please do not click this links</span>
             </div>
         </div>
     )

@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import './styles/Pricing.scss'
 import Header from './Header'
@@ -31,7 +32,11 @@ const Pricing = () => {
                         <p>Per person from</p>
                         <h4>$1234</h4>
                     </div>
-                    <button>More</button>
+                    <Link to='/login' className='link'>
+                        <button>
+                            More
+                        </button>
+                    </Link>
                 </div>
 
                 <div className="tour">
@@ -42,7 +47,11 @@ const Pricing = () => {
                         <p>Per person from</p>
                         <h4>$1234</h4>
                     </div>
-                    <button>More</button>
+                    <Link to='/login' className='link'>
+                        <button>
+                            More
+                        </button>
+                    </Link>
                 </div>
 
                 <div className="tour">
@@ -53,7 +62,11 @@ const Pricing = () => {
                         <p>Per person from</p>
                         <h4>$1234</h4>
                     </div>
-                    <button>More</button>
+                    <Link to='/login' className='link'>
+                        <button>
+                            More
+                        </button>
+                    </Link>
                 </div>
 
                 <div className="tour">
@@ -64,7 +77,11 @@ const Pricing = () => {
                         <p>Per person from</p>
                         <h4>$1234</h4>
                     </div>
-                    <button>More</button>
+                    <Link to='/login' className='link'>
+                        <button>
+                            More
+                        </button>
+                    </Link>
                 </div>
                 <ArrowForward onClick={nextSlide} />
             </div>
@@ -79,7 +96,11 @@ const Pricing = () => {
                         <p>Per person from</p>
                         <h4>$1234</h4>
                     </div>
-                    <button>More</button>
+                    <Link to='/login' className='link'>
+                        <button>
+                            More
+                        </button>
+                    </Link>
                 </div>
 
                 <div className="tour">
@@ -90,7 +111,11 @@ const Pricing = () => {
                         <p>Per person from</p>
                         <h4>$1234</h4>
                     </div>
-                    <button>More</button>
+                    <Link to='/login' className='link'>
+                        <button>
+                            More
+                        </button>
+                    </Link>
                 </div>
 
                 <div className="tour">
@@ -101,7 +126,11 @@ const Pricing = () => {
                         <p>Per person from</p>
                         <h4>$1234</h4>
                     </div>
-                    <button>More</button>
+                    <Link to='/login' className='link'>
+                        <button>
+                            More
+                        </button>
+                    </Link>
                 </div>
 
                 <div className="tour">
@@ -112,7 +141,11 @@ const Pricing = () => {
                         <p>Per person from</p>
                         <h4>$1234</h4>
                     </div>
-                    <button>More</button>
+                    <Link to='/login' className='link'>
+                        <button>
+                            More
+                        </button>
+                    </Link>
                 </div>
                 <ArrowForward onClick={nextSlide} />
 

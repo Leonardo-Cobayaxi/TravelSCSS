@@ -37,7 +37,6 @@
                     text-decoration: none;
                     padding: 2rem;
                     color: $main-color;
-
                     height: 100%;
                 }
 
@@ -132,9 +131,10 @@
     gap: 2rem;
 
     li {
-        padding: 60px;
+        padding: 4rem;
         list-style: none;
         border: 2px solid $main-color;
+        width: 450px;
 
         a {
             text-decoration: none;
@@ -142,7 +142,7 @@
             text-transform: uppercase;
             font-size: 56px;
             text-shadow: 1px 0px 1px $main-color;
-            letter-spacing: 4px;
+
         }
     }
 }

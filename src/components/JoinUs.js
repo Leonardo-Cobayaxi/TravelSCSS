@@ -1,4 +1,5 @@
 import React from 'react';
+
 import DiscountIcon from '@mui/icons-material/Discount';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import MoneyOffIcon from '@mui/icons-material/MoneyOff';
@@ -49,7 +50,11 @@ const AboutUs = () => {
 
                     <img src={cardStack} />
                 </div>
-                <button>Sign in</button>
+                <a href='/login' >
+                    <button>
+                        Sign In
+                    </button>
+                </a>
             </div>
         </div>
     )

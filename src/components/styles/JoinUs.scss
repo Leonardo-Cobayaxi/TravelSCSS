@@ -86,7 +86,7 @@
 .lowerSection {
     display: flex;
     flex-direction: row;
-
+    position: relative;
     justify-content: center;
     height: 80vh;
 
@@ -103,9 +103,14 @@
         }
     }
 
-    button {
+    a {
         position: absolute;
-        bottom: 2%;
+        bottom: 0%;
+    }
+
+    button {
+
+
         background-color: transparent;
         border: 3px solid $main-color ;
         color: $main-color;
