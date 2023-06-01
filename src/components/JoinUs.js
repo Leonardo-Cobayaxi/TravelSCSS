@@ -20,7 +20,7 @@ const AboutUs = () => {
                         We understand that the more we travel, the more we enrich our lives.</p>
                 </div>
 
-                <img src={travel} />
+                <img src={travel} alt='travel' />
             </div>
             <div className='midSection'>
                 <h1>Why we're different</h1>
@@ -48,7 +48,7 @@ const AboutUs = () => {
                 <div>
                     <h1>Customize your card</h1>
 
-                    <img src={cardStack} />
+                    <img src={cardStack} alt='credit cards' />
                 </div>
                 <a href='/login' >
                     <button>

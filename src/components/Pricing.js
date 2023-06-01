@@ -26,7 +26,7 @@ const Pricing = () => {
                 <ArrowBack onClick={nextSlide} />
                 <div className="tour">
                     <h1>City of light</h1>
-                    <img src={small} />
+                    <img src={small} alt='Paris' />
                     <p>Paris , France</p>
                     <div className='price'>
                         <p>Per person from</p>
@@ -41,7 +41,7 @@ const Pricing = () => {
 
                 <div className="tour">
                     <h1>Gothic architecture</h1>
-                    <img src={yarham} />
+                    <img src={yarham} alt='yharnam' />
                     <p>Healing Church , Yharnam</p>
                     <div className='price'>
                         <p>Per person from</p>
@@ -56,7 +56,7 @@ const Pricing = () => {
 
                 <div className="tour">
                     <h1>City of Counts</h1>
-                    <img src={barca} />
+                    <img src={barca} alt='barcelona' />
                     <p>Barcelona , Spain</p>
                     <div className='price'>
                         <p>Per person from</p>
@@ -71,7 +71,7 @@ const Pricing = () => {
 
                 <div className="tour">
                     <h1>Flying city</h1>
-                    <img src={columbia} />
+                    <img src={columbia} alt='columbia' />
                     <p>Columbia , USA</p>
                     <div className='price'>
                         <p>Per person from</p>
@@ -90,7 +90,7 @@ const Pricing = () => {
 
                 <div className="tour">
                     <h1>Coldest megacity</h1>
-                    <img src={moscow} />
+                    <img src={moscow} alt='moscow' />
                     <p>Moscow , Russia</p>
                     <div className='price'>
                         <p>Per person from</p>
@@ -105,7 +105,7 @@ const Pricing = () => {
 
                 <div className="tour">
                     <h1>Industrial whaling city</h1>
-                    <img src={dunwall} />
+                    <img src={dunwall} alt='dunwall' />
                     <p>Dunwall , Gristol </p>
                     <div className='price'>
                         <p>Per person from</p>
@@ -120,7 +120,7 @@ const Pricing = () => {
 
                 <div className="tour">
                     <h1>The big apple</h1>
-                    <img src={newyork} />
+                    <img src={newyork} alt='nyc' />
                     <p>NYC , USA</p>
                     <div className='price'>
                         <p>Per person from</p>
@@ -135,7 +135,7 @@ const Pricing = () => {
 
                 <div className="tour">
                     <h1>Otherworldly experience</h1>
-                    <img src={pandora} />
+                    <img src={pandora} alt='pandora' />
                     <p>Wasteland , Pandora</p>
                     <div className='price'>
                         <p>Per person from</p>

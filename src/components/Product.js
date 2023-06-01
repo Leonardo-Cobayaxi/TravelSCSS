@@ -1,6 +1,6 @@
 import React from "react";
 import './styles/Product.scss'
-import cards from '../components/assets/tiltedCards.svg'
+import cards from '../components/assets/tiltedCards.png'
 
 const Product = () => {
     return (
