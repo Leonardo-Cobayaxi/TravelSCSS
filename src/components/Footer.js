@@ -28,27 +28,27 @@ const Footer = () => {
                     </Link>
                 </div>
                 <div className="media">
-                    <Link to='/'>
+                    <Link to='https://www.facebook.com/'>
                         <Facebook />
                     </Link>
 
-                    <Link to='/'>
+                    <Link to='https://www.instagram.com/'>
                         <Instagram />
                     </Link>
 
-                    <Link to='/'>
+                    <Link to='https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4tZ2IifQ%3D%3D%22%7D'>
                         <Twitter />
                     </Link>
 
-                    <Link to='/'>
+                    <Link to='https://www.youtube.com/'>
                         <YouTube />
                     </Link>
 
-                    <Link to='/'>
+                    <Link to='https://www.linkedin.com/'>
                         <LinkedIn />
                     </Link>
 
-                    <Link to='/'>
+                    <Link to='/https://github.com/'>
                         <GitHub />
                     </Link>
 
