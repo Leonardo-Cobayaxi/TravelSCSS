@@ -8,10 +8,9 @@ const Testimonials = () => {
         <section className="testimonials">
             <div className="header">
                 <h1>Connect with other members</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Iusto distinctio delectus iste, voluptas dignissimos laudantium
-                    repellendus repudiandae voluptatem amet expedita
-                    quia eos porro ut a molestiae eaque impedit temporibus. Exercitationem!</p>
+                <p>We give people the power to build community
+                    and bring the world closer together.
+                    We’re commited to fostering a safe and supportive community for everyone.</p>
             </div>
             <div className="cards">
                 <div className="card">

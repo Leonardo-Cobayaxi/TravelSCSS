@@ -15,21 +15,29 @@
     .header {
         color: $main-color;
         width: 20%;
-        z-index: 0;
         position: absolute;
         left: 5%;
         background-image: url(../assets/purpleCircle.svg);
         background-repeat: no-repeat;
-        background-position: right;
+
+        background-size: contain;
+
+        p {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            font-size: large;
+
+        }
+
     }
 
     .cards {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 2rem;
+        gap: 1rem;
         position: absolute;
-        right: 1%;
+        right: 3%;
 
 
         .card {

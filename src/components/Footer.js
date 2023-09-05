@@ -15,7 +15,9 @@ const Footer = () => {
                     <div className='email'>
                         <label>Your Email</label>
                         <input type="text" required />
-                        <button>send</button>
+                        <Link to='/login'>
+                            <button>send</button>
+                        </Link>
                     </div>
                 </form>
 
