@@ -16,7 +16,7 @@ const Testimonials = () => {
                 <div className="card">
                     <img src={profile1} alt="user" />
                     <p>We had the most remarkable family tour.
-                        Not only everything was perfect, but we felt, in every instance, that we became goofy and the crew truly cared about us.
+                        Not only everything was perfect, but we felt, in every instance, that we became goofy.
                     </p>
                     <h3>Gary K. Katz</h3>
                     <h4>Barcelona, Spain</h4>
@@ -25,7 +25,7 @@ const Testimonials = () => {
                     <img src={profile2} alt="user" />
                     <p>The comfort, the incredibly caring crew, the goofiness, the history we learned, along with the stunning beauty of the islands.
                     </p>
-                    <h3>Christopher R. Garcia
+                    <h3>Christopher Garcia
                     </h3>
                     <h4>Dunwall , Gristol</h4>
                 </div>

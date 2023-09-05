@@ -23,7 +23,7 @@ const Pricing = () => {
         <div className='pricing'>
             <Header />
             <div className={first === true ? "cart-container" : "none"}>
-                <ArrowBack onClick={nextSlide} />
+                <ArrowBack fontSize='large' onClick={nextSlide} />
                 <div className="tour">
                     <h1>City of light</h1>
                     <img src={small} alt='Paris' />
@@ -83,10 +83,10 @@ const Pricing = () => {
                         </button>
                     </Link>
                 </div>
-                <ArrowForward onClick={nextSlide} />
+                <ArrowForward fontSize='large' onClick={nextSlide} />
             </div>
             <div className={first === true ? "none" : "cart-container"}>
-                <ArrowBack onClick={nextSlide} />
+                <ArrowBack fontSize='large' onClick={nextSlide} />
 
                 <div className="tour">
                     <h1>Coldest megacity</h1>
@@ -134,7 +134,7 @@ const Pricing = () => {
                 </div>
 
                 <div className="tour">
-                    <h1>Otherworldly experience</h1>
+                    <h1>Otherworldly view</h1>
                     <img src={pandora} alt='pandora' />
                     <p>Wasteland , Pandora</p>
                     <div className='price'>
@@ -147,7 +147,7 @@ const Pricing = () => {
                         </button>
                     </Link>
                 </div>
-                <ArrowForward onClick={nextSlide} />
+                <ArrowForward fontSize='large' onClick={nextSlide} />
 
             </div>
 

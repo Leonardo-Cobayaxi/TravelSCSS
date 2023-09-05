@@ -16,14 +16,13 @@
 }
 
 .cart-container {
-    padding: 16px;
     color: $main-color;
     display: flex;
     flex-direction: row;
-    gap: 0.5rem;
+    gap: 1rem;
     text-align: center;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     height: 100%;
 }
 
@@ -34,7 +33,7 @@
     align-items: center;
     color: $main-color;
     height: 400px;
-    width: 360px;
+    width: 275px;
     line-height: 35px;
     position: relative;
 
@@ -43,7 +42,7 @@
     }
 
     img {
-        width: 320px;
+        width: 258px;
         height: 200px;
         cursor: pointer;
 
